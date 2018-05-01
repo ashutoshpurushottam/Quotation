@@ -56,7 +56,7 @@ function generateRandomQuote(quotesArray, length) {
 function printQuotesOnScreen(shuffled, obj, length){
   // Random background color
   document.getElementById('rgb').style.background = randomColor();
-  // Make a new quote if its not supplied from above function
+  // Make a new quote if its not the first one
   if(count != 0) {
     obj = shuffled[count];
   }
