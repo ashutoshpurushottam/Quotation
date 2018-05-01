@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Random Quotes</title>
+  <link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="style.css">
+</head>
+  <body id="rgb">
+    <div class="container">
+      <div id="quote-box"></div>
+      <div id="quotesIntro" class="quote-intro">
+        <h1>Q u o t e  G e n e r a t o r</h1>
+        <form id="quotesForm" name="quotesForm" method="POST">
+          <select id="quotesTopic" name="quotesTopic">
+            <option value="">Topic</option>
+            <option value="science">Science</option>
+            <option value="business">Business</option>
+            <option value="general">General</option>
+            <option value="philosphy">Philosphy</option>
+            <option value="inspiring">Inspiring</option> 
+          </select>
+          <select id="quotesLength" name="quotesLength">
+            <option value="">Quotes</option>
+            <option value="1" >1</option>
+            <option value="2" >2</option>
+            <option value="3" >3</option>
+            <option value="4" >4</option>
+            <option value="5" >5</option>
+          </select>
+          <button id="quotesStart" type="submit">Start</button>
+        </form>
+      </div>
+      <div id="quotesEnd" class="quote-end" style="visibility: hidden;">
+        <h2>All done!</h2>
+        <button id="restartQuotes">Restart</button>
+        <button id="exitQuotes">Exit</button>
+      </div>
+    </div>
+    <script src="quote.js"></script>
+    <script src="script.js"></script>
+  </body>  
+</html>
