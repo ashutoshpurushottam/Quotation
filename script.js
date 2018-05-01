@@ -23,10 +23,8 @@ quotesFormEl.onsubmit = function(e) {
 
   if (!topic) {
     alert('Please select quotes topic!');
-    return;
   } else if (!length) {
     alert('Please select number of quotes!');
-    return;
   } else {
     quotesIntroEl.style.display = 'none';
     generateRandomQuotesForTopic(topic, length);
